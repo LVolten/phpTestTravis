@@ -8,7 +8,6 @@ final class Email
     private function __construct(string $email)
     {
         $this->ensureIsValidEmail($email);
-
         $this->email = $email;
     }
 
@@ -19,7 +18,7 @@ final class Email
 
     public function __toString(): string
     {
-        return $this->email;
+        return 'Email is: '.$this->email;
     }
 
     private function ensureIsValidEmail(string $email): void
@@ -34,5 +33,3 @@ final class Email
         }
     }
 }
-Test Code
->
