@@ -31,3 +31,4 @@ final class EmailTest extends TestCase
         );
     }
 }
+
